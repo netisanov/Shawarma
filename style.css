@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url('./fonts/ubuntumedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* * Next code contains main styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'ubuntu';
+    margin: 0;
+    background-color: #fff;
+}
+h1, h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+}
+/* * End of main styles */
+/* * Next code contains reusable styles */
+.text36 {
+    font-size: 36px;
+    margin: 0;
+}
+.text32 {
+    font-size: 32px;
+    margin: 0;
+}
+.text30 {
+    font-size: 30px;
+    margin: 0;
+}
+.text26 {
+    font-size: 26px;
+    margin: 0;
+}
+.text24 {
+    font-size: 24px;
+    margin: 0;
+}
+.text22 {
+    font-size: 22px;
+    margin: 0;
+}
+.text20 {
+    font-size: 20px;
+    margin: 0;
+}
+.text18 {
+    font-size: 18px;
+    margin: 0;
+}
+.text16 {
+    font-size: 16px;
+    margin: 0;
+}
+.text14 {
+    font-size: 14px;
+    margin: 0;
+}
+.button-simple {
+    width: 203px;
+    height: 50px;
+    background: #E63E00;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    outline: none;
+}
+.button-simple:hover {
+    background: #C33500;
+}
+/* * End of reusable styles */
+/* * Next code contains header syles */
+.header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 120px;
+    z-index: 1;
+}
+.menu {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__list {
+    display: flex;
+}
+.menu__item {
+    list-style: none;
+}
+.menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    transition: color ease-in 0.2s;
+    font-weight: 500;
+}
+.menu__link:hover {
+    color: #E63E00;
+}
+.menu__link:last-child {
+    margin-right: 90px;
+}
+/* * End of header styles */
+/* * Next code contains Primary section styles */
+.primary {
+    margin-top: 100px;
+    padding: 0 120px;
+}
+.slogan {
+    display: flex;
+    justify-content: space-between;
+}
+.slogan__adv {
+    padding-top: 70px;
+    padding-left: 40px;
+}
+.slogan__text {
+    margin-bottom: 40px;
+}
+.slogan__image {
+    padding-top: 12px;
+}
+/* * End of Primary section styles */
+/* * Next code contains About section styles */
+.about {
+    padding: 0 120px;
+}
+.why {
+    padding: 35px 22px 70px 20px;
+}
+.about__title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.why__description {
+    display: flex;
+    justify-content: space-between;
+}
+.why__list {
+    list-style: none;
+    margin: 0;
+    padding-top: 30px;
+}
+.why__item {
+    counter-increment: my-counter;
+    position: relative;
+    margin-bottom: 40px;
+
+}
+.why__item:last-child {
+    margin-bottom: 0;
+}
+.why__item::before {
+    content: counter(my-counter);
+    position: absolute;
+    left: -50px;
+    font-size: 36px;
+    top: -4px;
+    color: #E63E00;
+}
+/* * End of About section styles */
+/* * Next code contains Catalog section styles */
+.catalog {
+    padding: 0 120px;
+}
+.catalog__title {
+    display: flex;
+    padding-left: 45px;
+    padding-top: 45px;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+.catalog__title::before {
+    display: block;
+    content: '';
+    width: 5px;
+    height: 50px;
+    background-color: #E63E00;
+    margin: 0 20px;
+    top: -4px
+}
+.order__list {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.order__item {
+    width: 370px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.order__image {
+    margin-bottom: 25px;
+}
+.order__title {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 14px;
+}
+.order__description {
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: rgba(156, 156, 156, 1);
+    margin-bottom: 22px;
+}
+.order__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.price__tag {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 54px;
+}
+/* * End of catalog section styles */
+/* * Next code contains Request section styles */
+.make-order {
+    padding: 0 120px;
+}
+.request {
+    height: 340px;
+    background-image: url('./img/request.png');
+}
+.request {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.form__title {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+
