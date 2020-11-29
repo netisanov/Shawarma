@@ -11,12 +11,12 @@
     <header class="header">
         <div class="container">
             <div class="menu">
-                <img src="./img/logo-shawarma.png" alt="Shawarma Logo" class='menu__logo'>
+                <img src="./img/logo-shawarma.png" alt="Shawarma Logo" class='header__logo'>
                 <ul class='menu__list'>
-                    <li class='menu__item text20'><a href="" class='menu__link'>Каталог</a></li>
-                    <li class='menu__item text20'><a href="" class='menu__link'>Заказать</a></li>
-                    <li class='menu__item text20'><a href="" class='menu__link'>Клиенты</a></li>
-                    <li class='menu__item text20'><a href="" class='menu__link'>О нас</a></li>
+                    <li class='menu__item text20 upper-case'><a href="" class='menu__link'>Каталог</a></li>
+                    <li class='menu__item text20 upper-case'><a href="" class='menu__link'>Заказать</a></li>
+                    <li class='menu__item text20 upper-case'><a href="" class='menu__link'>Клиенты</a></li>
+                    <li class='menu__item text20 upper-case'><a href="" class='menu__link'>О нас</a></li>
                 </ul>
             </div>
         </div>
@@ -61,7 +61,7 @@
     <section class="catalog">
         <div class="container">
             <div class="order">
-                <h2 class="catalog__title text36">Каталог</h2>
+                <h2 class="catalog__title text36 red-dash">Каталог</h2>
                 <ul class="order__list">
                     <li class="order__item">
                         <picture class="order__image">
@@ -105,7 +105,22 @@
             <form class="request">
                 <div class="request__form">
                     <p class="form__title text36">Оставьте заявку</p>
-                    <div class="form__submit"></div>
+                    <ul class="form__inputs">
+                        <li class="form__data">
+                            <label class="form__label text30" for="name">Имя</label>
+                            <input name="name" type="text" class="form__input">
+                        </li>
+                        <li class="form__data">
+                            <label for="phone" class="form__label text30">Телефон</label>
+                            <input name="phone" type="tel" class="form__input">
+                        </li>
+                    </ul>
+                    <div class="form__submit">
+                        <p class="submit__notification text14">*Нажимая кнопку, я&nbsp;даю свое</br>
+                            согласение на&nbsp;обработку</br>
+                            персональных данных</p>
+                        <button class="form__button button-simple text24" type="submit">Отправить</button>
+                    </div>
                 </div>
 
             </form>
@@ -113,6 +128,53 @@
         </div>
 
     </section>
-    
+    <section class="customers">
+        <div class="container">
+            <div class="guests">
+                <h2 class="guests__title text36 red-dash">Наши гости</h2>
+                <picture class="guests__list">
+                    <img src="./img/customers/guest-1.png" alt="Guest Photo" class="guests__photo">
+                    <img src="./img/customers/guest-2.png" alt="Guest Photo" class="guests__photo">
+                    <img src="./img/customers/guest-3.png" alt="Guest Photo" class="guests__photo">
+                    <img src="./img/customers/guest-4.png" alt="Guest Photo" class="guests__photo">
+                </picture>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div class="container__map">
+            <div class="map__api">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7c653ca8c11e3d1cb1a650c0b71ab9d84fdea771340de2c091b263f080919124&amp;width=100%25&amp;height=563&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </section>
+    <footer class="credits">
+        <div class="container">
+            <div class="contacts">
+                <div class="contacts__privacy">
+                    <img src="./img/logo-shawarma.png" alt="Shawarma Logo" class='contacts__logo'>
+                    <p class="privacy__years text24">© 2009-2020</p>
+                    <p class='privacy__text text14'>Политика конфиденциальности<br />
+                        Копирование материалов запрещено</p>
+                </div>
+                <ul class='contacts__list'>
+                    <li class='contacts__item text20'><a href="" class='menu__link'>Каталог</a></li>
+                    <li class='contacts__item text20'><a href="" class='menu__link'>Заказать</a></li>
+                    <li class='contacts__item text20'><a href="" class='menu__link'>Клиенты</a></li>
+                    <li class='contacts__item text20'><a href="" class='menu__link'>О нас</a></li>
+                </ul>
+                <div class="contacts__networks">
+                    <a href="" class="networks__item"><img src="./img/credits/vk.png" onMouseOver="this.src='./img/credits/vk-active.png'" onMouseOut="this.src='./img/credits/vk.png'""></a>
+                    <a href="" class="networks__item"><img src="./img/credits/inst.png" onMouseOver="this.src='./img/credits/inst-active.png'" onMouseOut="this.src='./img/credits/inst.png'""></a>
+                </div>
+                <div class="contacts__info">
+                    <p class="contacts__adress text24">8 (999) 444-33-22<br />
+                        г. Челябинск, ул. Ленина, д.11</p>
+                    <p class="text24">shawarma@yandex.ru</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'ubuntu-reg';
+    src: url('./fonts/ubunturegular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* * Next code contains main styles */
 * {
     box-sizing: border-box;
@@ -16,6 +22,9 @@ body {
 h1, h2 {
     font-weight: 500;
     text-transform: uppercase;
+}
+label {
+    color: #ffffff;
 }
 .container {
     width: 1440px;
@@ -77,6 +86,18 @@ h1, h2 {
 .button-simple:hover {
     background: #C33500;
 }
+.red-dash::before {
+    display: block;
+    content: '';
+    width: 5px;
+    height: 50px;
+    background-color: #E63E00;
+    margin: 0 20px;
+    top: -4px
+}
+.upper-case {
+    text-transform: uppercase;
+}
 /* * End of reusable styles */
 /* * Next code contains header syles */
 .header {
@@ -93,25 +114,30 @@ h1, h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 90px;
+}
+.header__logo {
+    margin-right: 262px;
 }
 .menu__list {
     display: flex;
+    padding: 0;
 }
 .menu__item {
     list-style: none;
+    margin-right: 70px;
+}
+.menu__item:last-child {
+    margin-right: 0px;
 }
 .menu__link {
     text-decoration: none;
-    text-transform: uppercase;
     color: #000000;
     transition: color ease-in 0.2s;
     font-weight: 500;
 }
 .menu__link:hover {
     color: #E63E00;
-}
-.menu__link:last-child {
-    margin-right: 90px;
 }
 /* * End of header styles */
 /* * Next code contains Primary section styles */
@@ -155,6 +181,7 @@ h1, h2 {
     padding-top: 30px;
 }
 .why__item {
+    font-family: 'ubuntu-reg';
     counter-increment: my-counter;
     position: relative;
     margin-bottom: 40px;
@@ -178,19 +205,9 @@ h1, h2 {
 }
 .catalog__title {
     display: flex;
-    padding-left: 45px;
     padding-top: 45px;
     line-height: 50px;
     margin-bottom: 40px;
-}
-.catalog__title::before {
-    display: block;
-    content: '';
-    width: 5px;
-    height: 50px;
-    background-color: #E63E00;
-    margin: 0 20px;
-    top: -4px
 }
 .order__list {
     list-style: none;
@@ -209,12 +226,14 @@ h1, h2 {
     margin-bottom: 25px;
 }
 .order__title {
+    font-family: 'ubuntu-reg';
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 14px;
 }
 .order__description {
+    font-family: 'ubuntu-reg';
     font-weight: 400;
     letter-spacing: -0.5px;
     color: rgba(156, 156, 156, 1);
@@ -232,23 +251,143 @@ h1, h2 {
     margin-right: 54px;
 }
 /* * End of catalog section styles */
-/* * Next code contains Request section styles */
+/* * Next code contains Make-order section styles */
 .make-order {
     padding: 0 120px;
 }
 .request {
     height: 340px;
     background-image: url('./img/request.png');
-}
-.request {
     display: flex;
     justify-content: flex-end;
-    
+    padding: 40px 20px 0 0;
 }
-.form__title {
-    font-weight: 400;
-    color: rgba(255, 255, 255, 1);
 
+.form__title {
+    font-family: 'ubuntu-reg';
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
 }
+.form__inputs {
+    font-family: 'ubuntu-reg';
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+.form__data {
+    margin-bottom: 40px;
+}
+.form__data:last-child {
+    margin-bottom: 0px;
+}
+.form__label {
+    margin-right: 20px
+}
+.form__input {
+    width: 350px;
+    font-size: 30px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+}
+.form__submit {
+    font-family: 'ubuntu-reg';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.submit__notification {
+    color: #ffffff;
+}
+/* * End of Make-order section styles */
+/* * Next code contains Customers section styles */
+.customers {
+    padding: 0 120px;
+}
+.guests {
+    padding: 0 20px;
+}
+.guests__title {
+    display: flex;
+    padding-top: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.guests__list {
+    display: flex;
+    justify-content: space-between;
+}
+.guests__photo {
+    margin-bottom: 30px;
+}
+/* * End of Customers section code */
+/* * Next code contains Map section styles */
+.container__map {
+    width: 100%;
+}
+.map__api {
+    padding: 0;
+    margin: 0;
+}
+/* * end of Map section styles */
+/* * Next code contains Footer styles */
+.credits {
+    padding: 0 120px;
+}
+.contacts {
+    display: flex;
+    flex-direction: row;
+}
+.contacts__privacy {
+    margin-right: 176px;
+    padding: 50px 0 0 0;
+}
+.privacy__text {
+    font-family: 'ubuntu-reg';
+}
+.contacts__logo {
+    margin-bottom: 10px;
+}
+.privacy__years {
+    margin-bottom: 20px;
+}
+.contacts__list {
+    list-style: none;
+    padding: 80px 0 0 0;
+    margin: 0;
+    margin-right: 145px;
+}
+.contacts__item {
+    margin-bottom: 15px;
+}
+.footer__item:last-child {
+    margin-bottom: 0;
+}
+.contacts__networks {
+    margin-right: 128px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 0 0;
+}
+.networks__item {
+    margin-bottom: 40px;
+}
+.contacts__info {
+    padding: 80px 0 0 0;
+}
+.contacts__adress {
+    font-family: 'ubuntu-reg';
+    margin-bottom: 30px;
+}
+
+
+
 
 
