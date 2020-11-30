@@ -31,7 +31,7 @@
                     <button class="slogan__button button-simple text24">Проверить</button>
                 </div>
                 <picture class='slogan__image'>
-                    <source media="(max-width: 768px)" srcset="./img/primary/person-shawarma-mobile.png">
+                    <source media="(max-width: 320px)" srcset="./img/primary/person-shawarma-mobile.png">
                     <img src="./img/primary/person-shawarma.png" alt="Shawarma Person">
                 </picture>
             </div>
@@ -42,8 +42,9 @@
             <div class="why">
                 <h2 class="about__title text36">Почему мы?</h2>
                 <div class="why__description">
-                    <picture>
-                        <img src="./img/about/shawarma.png" alt="">
+                    <picture class="why__shawarma">
+                        <source media="(max-width: 768px)" srcset="./img/about/shawarma-tablet.png">
+                        <img src="./img/about/shawarma.png" alt="Shawarma">
                     </picture>
                     <ol class="why__list">
                         <li class="why__item text32">Только натуральные продукты</li>
@@ -65,6 +66,7 @@
                 <ul class="order__list">
                     <li class="order__item">
                         <picture class="order__image">
+                            <source media="(max-width: 768px)" srcset="./img/catalog/example-1-768.png">
                             <img src="./img/catalog/example-1.png" alt="Shawarma Photo">
                         </picture>
                         <p class="order__title text30">Классическая</p>
@@ -76,6 +78,7 @@
                     </li>
                     <li class="order__item">
                         <picture class="order__image">
+                            <source media="(max-width: 768px)" srcset="./img/catalog/example-2-768.png">
                             <img src="./img/catalog/example-2.png" alt="Shawarma Photo">
                         </picture>
                         <p class="order__title text30">Фирменная</p>
@@ -87,6 +90,7 @@
                     </li>
                     <li class="order__item">
                         <picture class="order__image">
+                            <source media="(max-width: 768px)" srcset="./img/catalog/example-3-768.png">
                             <img src="./img/catalog/example-3.png" alt="Shawarma Photo">
                         </picture>
                         <p class="order__title text30">Мексиканская</p>
@@ -132,12 +136,12 @@
         <div class="container">
             <div class="guests">
                 <h2 class="guests__title text36 red-dash">Наши гости</h2>
-                <picture class="guests__list">
+                <div class="guests__list">
                     <img src="./img/customers/guest-1.png" alt="Guest Photo" class="guests__photo">
                     <img src="./img/customers/guest-2.png" alt="Guest Photo" class="guests__photo">
                     <img src="./img/customers/guest-3.png" alt="Guest Photo" class="guests__photo">
-                    <img src="./img/customers/guest-4.png" alt="Guest Photo" class="guests__photo">
-                </picture>
+                    <!-- <img src="./img/customers/guest-4.png" alt="Guest Photo" class="guests__photo"> -->
+                </div>
             </div>
         </div>
     </section>
@@ -151,21 +155,23 @@
     <footer class="credits">
         <div class="container">
             <div class="contacts">
-                <div class="contacts__privacy">
-                    <img src="./img/logo-shawarma.png" alt="Shawarma Logo" class='contacts__logo'>
-                    <p class="privacy__years text24">© 2009-2020</p>
-                    <p class='privacy__text text14'>Политика конфиденциальности<br />
-                        Копирование материалов запрещено</p>
+                <div class="footer__wrap">
+                    <div class="contacts__privacy">
+                        <img src="./img/logo-shawarma.png" alt="Shawarma Logo" class='contacts__logo'>
+                        <p class="privacy__years text24">© 2009-2020</p>
+                        <p class='privacy__text text14'>Политика конфиденциальности<br />
+                            Копирование материалов запрещено</p>
+                    </div>
+                    <ul class='contacts__list'>
+                        <li class='contacts__item text20'><a href="" class='menu__link'>Каталог</a></li>
+                        <li class='contacts__item text20'><a href="" class='menu__link'>Заказать</a></li>
+                        <li class='contacts__item text20'><a href="" class='menu__link'>Клиенты</a></li>
+                        <li class='contacts__item text20'><a href="" class='menu__link'>О нас</a></li>
+                    </ul>
                 </div>
-                <ul class='contacts__list'>
-                    <li class='contacts__item text20'><a href="" class='menu__link'>Каталог</a></li>
-                    <li class='contacts__item text20'><a href="" class='menu__link'>Заказать</a></li>
-                    <li class='contacts__item text20'><a href="" class='menu__link'>Клиенты</a></li>
-                    <li class='contacts__item text20'><a href="" class='menu__link'>О нас</a></li>
-                </ul>
                 <div class="contacts__networks">
-                    <a href="" class="networks__item"><img src="./img/credits/vk.png" onMouseOver="this.src='./img/credits/vk-active.png'" onMouseOut="this.src='./img/credits/vk.png'""></a>
-                    <a href="" class="networks__item"><img src="./img/credits/inst.png" onMouseOver="this.src='./img/credits/inst-active.png'" onMouseOut="this.src='./img/credits/inst.png'""></a>
+                    <a href="" class="networks__item"><img src="./img/credits/vk-svg.svg" onMouseOver="this.src='./img/credits/vk-active-svg.svg'" onMouseOut="this.src='./img/credits/vk-svg.svg'"></a>
+                    <a href="" class="networks__item"><img src="./img/credits/inst-svg.svg" onMouseOver="this.src='./img/credits/inst-active-svg.svg'" onMouseOut="this.src='./img/credits/inst-svg.svg'"></a>
                 </div>
                 <div class="contacts__info">
                     <p class="contacts__adress text24">8 (999) 444-33-22<br />
@@ -176,5 +182,7 @@
             </div>
         </div>
     </footer>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </body>
 </html>
