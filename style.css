@@ -489,10 +489,11 @@ label {
     }
     .credits {
         width: 768px;
-        padding: 0 40px;
+        padding: 0 40px 75px 40px;
     }
     .footer__wrap {
         justify-content: space-between;
+        margin-bottom: 70px;
     }
     .contacts {
         flex-direction: column;
@@ -513,13 +514,22 @@ label {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin: 0 0 75px 0;
+        padding: 0;
+    }
+    .contacts__adress,
+    .contacts__email {
+        text-align: center;
+    }
+    .networks__item {
+        margin: 0 125px 0 0;
+    }
+    .networks__item:last-child {
         margin-right: 0;
     }
-    
-
-    
-
-
+    .contacts__info {
+        padding-top: 0;
+    }
 }
 
 @media (max-width: 320px) {

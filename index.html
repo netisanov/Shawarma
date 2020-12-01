@@ -170,15 +170,25 @@
                     </ul>
                 </div>
                 <div class="contacts__networks">
-                    <a href="" class="networks__item"><img src="./img/credits/vk-svg.svg" onMouseOver="this.src='./img/credits/vk-active-svg.svg'" onMouseOut="this.src='./img/credits/vk-svg.svg'"></a>
-                    <a href="" class="networks__item"><img src="./img/credits/inst-svg.svg" onMouseOver="this.src='./img/credits/inst-active-svg.svg'" onMouseOut="this.src='./img/credits/inst-svg.svg'"></a>
+                    <a href="" class="networks__item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/credits/vk-big.png">
+                            <img src="./img/credits/vk-svg.svg" onMouseOver="this.src='./img/credits/vk-active-svg.svg'" onMouseOut="this.src='./img/credits/vk-svg.svg'"></a>
+                        </picture>
+                    </a>
+                    <a href="" class="networks__item">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="./img/credits/inst-big.png">
+                            <img src="./img/credits/inst-svg.svg" onMouseOver="this.src='./img/credits/inst-active-svg.svg'" onMouseOut="this.src='./img/credits/inst-svg.svg'">
+                        </picture>
+                        
+                    </a>
                 </div>
                 <div class="contacts__info">
                     <p class="contacts__adress text24">8 (999) 444-33-22<br />
                         г. Челябинск, ул. Ленина, д.11</p>
-                    <p class="text24">shawarma@yandex.ru</p>
+                    <p class="contacts__email text24">shawarma@yandex.ru</p>
                 </div>
-                
             </div>
         </div>
     </footer>
