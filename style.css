@@ -113,7 +113,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 90px;
+    padding: 0 20px 0 20px;
 }
 .menu__list {
     display: flex;
@@ -214,7 +214,7 @@ label {
 }
 .order__item {
     width: 370px;
-    margin: 0;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -239,7 +239,6 @@ label {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 40px;
 }
 .price__tag {
     text-transform: uppercase;
@@ -464,7 +463,8 @@ label {
         width: 350px;
     }
     .order__item:last-child {
-        margin: 0 auto;
+        margin: 0 auto 30px auto;
+
     }
     .make-order {
         width: 768px;
@@ -530,6 +530,13 @@ label {
     .contacts__info {
         padding-top: 0;
     }
+    .slogan__button,
+    .price__button,
+    .form__button {
+        font-size: 20px;
+    }
+
+
 }
 
 @media (max-width: 320px) {
@@ -538,4 +545,211 @@ label {
         margin: 0;
         padding: 0 20px;
     }
+    .map {
+        display: none;
+    }
+    .header {
+        width: 320px;
+        padding: 0;
+    }
+    .primary {
+        width: 320px;
+        padding: 0;
+    }
+    .menu__list {
+        display: none;
+    }
+    .slogan__text {
+        font-size: 18px;
+    }
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .slogan__adv {
+        padding-top: 60px;
+    }
+    .slogan__text {
+        padding: 0;
+        margin-bottom: 279px;
+    }
+    .slogan__image {
+        position: absolute;
+        right: 0;
+        bottom: 45px;
+    }
+    .slogan__button {
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+    }
+    .about__title {
+        font-size: 22px;
+        margin-bottom: 35px;
+    }
+    .about {
+        width: 320px;
+        padding: 0;
+    }
+    .why {
+        padding: 35px 0 0 0;
+    }
+    .why__shawarma {
+        display: none;
+    }
+    .why__description {
+        padding-left: 0;
+        margin-bottom: 10px;
+    }
+    .why__list {
+        padding-top: 0;
+    }
+    .why__item {
+        font-size: 18px;
+        padding-left: 10px;
+        margin-bottom: 22px;
+    }
+    .why__item::before {
+        content: counter(my-counter);
+        position: absolute;
+        left: -40px;
+        font-size: 24px;
+        top: -4px;
+        color: #E63E00;
+    }
+    .catalog {
+        width: 320px;
+        padding: 0;
+    }
+    .catalog__title {
+        font-size: 26px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 65px;
+    }
+    .catalog__title::before,
+    .catalog__title::after {
+        content: '';
+        margin: 0 15px;
+        height: 3px;
+        width: 25px;
+        background-color: #E63E00;
+    }
+    .order__title {
+        font-size: 26px;
+    }
+    .order__item {
+        margin-bottom: 30px;
+    }
+    .order__price {
+        flex-direction: column;
+    }
+    .button-simple {
+        width: 280px;
+    }
+    .price__tag {
+        margin: 0 0 30px 0;
+    }
+    .request {
+        height: 256.5px;
+        background-image: url('./img/request-mobile.png');
+    }
+    .make__order {
+        width: 320px;
+        padding: 0;
+    }
+    .make-order .container {
+        padding: 0;
+    }
+    .request {
+        padding: 22px 20px 19.5px 20px;
+    }
+    .form__title {
+        font-size: 26px;
+    }
+    .form__inputs {
+        margin-bottom: 20px;
+    }
+    .form__label {
+        font-size: 18px;   
+    }
+    .form__inputs {
+        align-items: normal;
+    }
+    .form__data {
+        margin-bottom: 24px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+    .form__input {
+        width: 190px;
+        font-size: 18px;
+    }
+    .form__submit {
+        flex-direction: column-reverse;
+    }
+    .submit__notification br {
+        display: none;
+    }
+    .submit__notification {
+        text-align: center;
+        font-size: 10px;
+    }
+    .form__button {
+        height: 40px;
+        margin-bottom: 11px;
+    }
+    .customers {
+        width: 320px;
+        padding: 0;
+    }
+    .guests__title {
+        font-size: 25px;
+        align-items: center;
+        padding-top: 30px;
+    }
+    .guests__title::before,
+    .guests__title::after {
+        content: '';
+        margin: 0 15px;
+        height: 3px;
+        width: 25px;
+        background-color: #E63E00;
+    }
+    .guests__list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .guests__photo:nth-child(2),
+    .guests__photo:nth-child(3) {
+        display: none;
+    }
+    .credits {
+        width: 320px;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    .footer__wrap {
+        flex-direction: column;
+        margin-bottom: 55px;
+    }
+    .contacts__privacy {
+        text-align: center;
+    }
+    .contacts__list {
+        padding: 32px 8px 0 8px;
+    }
+    .contacts__item:nth-child(odd) {
+        margin-bottom: 35px;
+    }
+    .networks__item {
+        margin-right: 70px;
+    }
+    .contacts__adress {
+        font-size: 18px;
+    }
+
+
 }

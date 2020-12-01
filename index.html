@@ -11,7 +11,10 @@
     <header class="header">
         <div class="container">
             <div class="menu">
-                <img src="./img/logo-shawarma.png" alt="Shawarma Logo" class='header__logo'>
+                <picture>
+                    <source media="(max-width: 320px)" srcset="./img/logo-shawarma-mobile.png">
+                    <img src="./img/logo-shawarma.png" alt="Shawarma Logo" class='header__logo'>
+                </picture>
                 <ul class='menu__list'>
                     <li class='menu__item text20 upper-case'><a href="" class='menu__link'>Каталог</a></li>
                     <li class='menu__item text20 upper-case'><a href="" class='menu__link'>Заказать</a></li>
@@ -66,6 +69,7 @@
                 <ul class="order__list">
                     <li class="order__item">
                         <picture class="order__image">
+                            <source media="(max-width: 320px)" srcset="./img/catalog/example-1-320.png">
                             <source media="(max-width: 768px)" srcset="./img/catalog/example-1-768.png">
                             <img src="./img/catalog/example-1.png" alt="Shawarma Photo">
                         </picture>
@@ -78,6 +82,7 @@
                     </li>
                     <li class="order__item">
                         <picture class="order__image">
+                            <source media="(max-width: 320px)" srcset="./img/catalog/example-2-320.png">
                             <source media="(max-width: 768px)" srcset="./img/catalog/example-2-768.png">
                             <img src="./img/catalog/example-2.png" alt="Shawarma Photo">
                         </picture>
@@ -90,6 +95,7 @@
                     </li>
                     <li class="order__item">
                         <picture class="order__image">
+                            <source media="(max-width: 320px)" srcset="./img/catalog/example-3-320.png">
                             <source media="(max-width: 768px)" srcset="./img/catalog/example-3-768.png">
                             <img src="./img/catalog/example-3.png" alt="Shawarma Photo">
                         </picture>
@@ -130,7 +136,6 @@
             </form>
             
         </div>
-
     </section>
     <section class="customers">
         <div class="container">
