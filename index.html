@@ -78,7 +78,7 @@
                         <p class="order__description text18">Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением фирменных специй, спелые томаты, свежие огурцы, хрустящий салат, маринованный красный лук, свежая зелень, маринованные огурцы и&nbsp;все это завернуто в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими соусами</p>
                         <div class="order__price">
                             <p class="price__tag text24">От 180</p>
-                            <button class="price__button button-simple text24">Заказать</button>
+                            <button class="price__button1 button-simple text24">Заказать</button>
                         </div>
                     </li>
                     <li class="order__item">
@@ -91,7 +91,7 @@
                         <p class="order__description text18">Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением фирменных специй, спелые томаты, свежие огурцы, хрустящий салат, маринованные огурцы с&nbsp;добавлением острых перчиков халапеньо и&nbsp;картофеля пай и&nbsp;все это завернуто в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими соусами</p>
                         <div class="order__price">
                             <p class="price__tag text24">От 240</p>
-                            <button class="price__button button-simple text24">Заказать</button>
+                            <button class="price__button2 button-simple text24">Заказать</button>
                         </div>
                     </li>
                     <li class="order__item">
@@ -104,7 +104,7 @@
                         <p class="order__description text18">Жаренное на&nbsp;гриле куриное филе с&nbsp;добавлением фирменных специй, спелые томаты, свежая зелень, сыр моцарелла, сочные ломтики бекона с&nbsp;добавлением острых перчиков халапеньо и&nbsp;все это завернуто в&nbsp;свежеиспеченный лаваш с&nbsp;двумя авторскими соусами</p>
                         <div class="order__price">
                             <p class="price__tag text24">От 210</p>
-                            <button class="price__button button-simple text24">Заказать</button>
+                            <button class="price__button3 button-simple text24">Заказать</button>
                         </div>
                     </li>
                 </ul>
@@ -130,7 +130,7 @@
                         <p class="submit__notification text14">*Нажимая кнопку, я&nbsp;даю свое</br>
                             согласение на&nbsp;обработку</br>
                             персональных данных</p>
-                        <button class="form__button button-simple text24" type="submit">Отправить</button>
+                        <button class="submit__button button-simple text24" type="submit">Отправить</button>
                     </div>
                 </div>
 
@@ -205,8 +205,32 @@
 
     <div class="modal">
         <div class="modal__wrap">
-            <h2 class="modal__title">Форма</h2>
-            <button class="button__close">Закрыть окно</button>
+            <h2 class="modal__title text36">Оставьте заявку.</br>
+                Наш менеджер позвонит</br>
+                Вам в&nbsp;течении 5&nbsp;минут</h2>
+            <button class="form__close"></button>
+            <form class="modal__form">
+                <ul class="modal__form__inputs">
+                    <li class="modal__form__data">
+                        <label class="modal__form__label text30" for="pizza__name">Название</label>
+                        <input id='label' name="pizza__name" type="text" class="modal__form__input">
+                    </li>
+                    <li class="modal__form__data">
+                        <label class="modal__form__label text30" for="name">Имя</label>
+                        <input name="name" type="text" class="modal__form__input">
+                    </li>
+                    <li class="modal__form__data">
+                        <label for="phone" class="modal__form__label text30">Телефон</label>
+                        <input name="phone" type="tel" class="modal__form__input">
+                    </li>
+                </ul>
+                <div class="modal__form__submit">
+                    <p class="modal__submit__notification text16">*Нажимая кнопку, я&nbsp;даю свое</br>
+                            согласение на&nbsp;обработку</br>
+                            персональных данных</p>
+                    <button class="modal__submit__button button-simple text36" type="submit">Отправить</button>
+                </div>
+            </form>
         </div>
     </div>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>

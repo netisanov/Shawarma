@@ -1,5 +1,10 @@
 let mainMenu = document.querySelector('.menu__list');
-let mainHamburger = document.querySelector('.hamburger')
+let mainHamburger = document.querySelector('.hamburger');
+let button1 = document.querySelector('.price__button1');
+let button2 = document.querySelector('.price__button2');
+let button3 = document.querySelector('.price__button3');
+let modal = document.querySelector('.modal');
+let closeModal = document.querySelector('.form__close')
 
 
 mainHamburger.addEventListener('click', () => {
@@ -49,3 +54,27 @@ $('.guests__list').slick({
   	}
   ]
 });
+
+button1.addEventListener('click', () => {
+	modal.classList.add('modal--active');
+	let label = document.getElementById('label');
+	label.value = 'Классическая'
+})
+button2.addEventListener('click', () => {
+	modal.classList.add('modal--active');
+	let label = document.getElementById('label');
+	label.value = 'Фирменная'
+})
+button3.addEventListener('click', () => {
+	modal.classList.add('modal--active');
+	let label = document.getElementById('label');
+	label.value = 'Мексиканская'
+})
+modal.addEventListener('click', (e) => {
+	if (e.target == modal) {
+		modal.classList.remove('modal--active');
+	}
+})
+closeModal.addEventListener('click', () => {
+	modal.classList.remove('modal--active');
+})
