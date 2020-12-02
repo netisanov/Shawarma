@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shawarma</title>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -16,11 +16,12 @@
                     <img src="./img/logo-shawarma.png" alt="Shawarma Logo" class='header__logo'>
                 </picture>
                 <ul class='menu__list'>
-                    <li class='menu__item text20 upper-case'><a href="" class='menu__link'>Каталог</a></li>
-                    <li class='menu__item text20 upper-case'><a href="" class='menu__link'>Заказать</a></li>
-                    <li class='menu__item text20 upper-case'><a href="" class='menu__link'>Клиенты</a></li>
-                    <li class='menu__item text20 upper-case'><a href="" class='menu__link'>О нас</a></li>
+                    <li class='menu__item text20 upper-case'><a href="#catalog-id" class='menu__link'>Каталог</a></li>
+                    <li class='menu__item text20 upper-case'><a href="#make-order-id" class='menu__link'>Заказать</a></li>
+                    <li class='menu__item text20 upper-case'><a href="#clients-id" class='menu__link'>Клиенты</a></li>
+                    <li class='menu__item text20 upper-case'><a href="#credits-id" class='menu__link'>О нас</a></li>
                 </ul>
+                <button class="menu__hamburger hamburger"></button>
             </div>
         </div>
     </header>
@@ -62,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section class="catalog">
+    <section id='catalog-id' class="catalog">
         <div class="container">
             <div class="order">
                 <h2 class="catalog__title text36 red-dash">Каталог</h2>
@@ -110,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section class="make-order">
+    <section id='make-order-id' class="make-order">
         <div class="container">
             <form class="request">
                 <div class="request__form">
@@ -137,7 +138,7 @@
             
         </div>
     </section>
-    <section class="customers">
+    <section id='clients-id' class="customers">
         <div class="container">
             <div class="guests">
                 <h2 class="guests__title text36 red-dash">Наши гости</h2>
@@ -145,7 +146,11 @@
                     <img src="./img/customers/guest-1.png" alt="Guest Photo" class="guests__photo">
                     <img src="./img/customers/guest-2.png" alt="Guest Photo" class="guests__photo">
                     <img src="./img/customers/guest-3.png" alt="Guest Photo" class="guests__photo">
-                    <!-- <img src="./img/customers/guest-4.png" alt="Guest Photo" class="guests__photo"> -->
+                    <img src="./img/customers/guest-4.png" alt="Guest Photo" class="guests__photo">
+                    <img src="./img/customers/guest-1.png" alt="Guest Photo" class="guests__photo">
+                    <img src="./img/customers/guest-2.png" alt="Guest Photo" class="guests__photo">
+                    <img src="./img/customers/guest-3.png" alt="Guest Photo" class="guests__photo">
+                    <img src="./img/customers/guest-4.png" alt="Guest Photo" class="guests__photo">
                 </div>
             </div>
         </div>
@@ -157,7 +162,7 @@
             </div>
         </div>
     </section>
-    <footer class="credits">
+    <footer id='credits-id' class="credits">
         <div class="container">
             <div class="contacts">
                 <div class="footer__wrap">
@@ -168,10 +173,10 @@
                             Копирование материалов запрещено</p>
                     </div>
                     <ul class='contacts__list'>
-                        <li class='contacts__item text20'><a href="" class='menu__link'>Каталог</a></li>
-                        <li class='contacts__item text20'><a href="" class='menu__link'>Заказать</a></li>
-                        <li class='contacts__item text20'><a href="" class='menu__link'>Клиенты</a></li>
-                        <li class='contacts__item text20'><a href="" class='menu__link'>О нас</a></li>
+                        <li class='contacts__item text20'><a href="#catalog-id" class='menu__link'>Каталог</a></li>
+                        <li class='contacts__item text20'><a href="#make-order-id" class='menu__link'>Заказать</a></li>
+                        <li class='contacts__item text20'><a href="#clients-id" class='menu__link'>Клиенты</a></li>
+                        <li class='contacts__item text20'><a href="#credits-id" class='menu__link'>О нас</a></li>
                     </ul>
                 </div>
                 <div class="contacts__networks">
@@ -197,7 +202,16 @@
             </div>
         </div>
     </footer>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
+    <div class="modal">
+        <div class="modal__wrap">
+            <h2 class="modal__title">Форма</h2>
+            <button class="button__close">Закрыть окно</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
