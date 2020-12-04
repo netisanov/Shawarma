@@ -5,6 +5,7 @@ let button2 = document.querySelector('.price__button2');
 let button3 = document.querySelector('.price__button3');
 let modal = document.querySelector('.modal');
 let closeModal = document.querySelector('.form__close')
+let modalFocus = document.querySelector('.modal__name__input')
 
 
 mainHamburger.addEventListener('click', () => {
@@ -58,17 +59,20 @@ $('.guests__list').slick({
 button1.addEventListener('click', () => {
 	modal.classList.add('modal--active');
 	let label = document.getElementById('label');
-	label.value = 'Классическая'
+	label.value = 'Классическая';
+	modalFocus.focus();
 })
 button2.addEventListener('click', () => {
 	modal.classList.add('modal--active');
 	let label = document.getElementById('label');
 	label.value = 'Фирменная'
+	modalFocus.focus();
 })
 button3.addEventListener('click', () => {
 	modal.classList.add('modal--active');
 	let label = document.getElementById('label');
 	label.value = 'Мексиканская'
+	modalFocus.focus();
 })
 modal.addEventListener('click', (e) => {
 	if (e.target == modal) {
