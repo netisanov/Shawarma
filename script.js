@@ -38,7 +38,7 @@ $('.guests__list').slick({
   variableWidth: true,
   responsive: [
   	{
-	  	breakpoint: 768,
+	  	breakpoint: 1235,
 	  	settings: {
 	  		slidesToShow: 3,
 	  		slidesToScroll: 1,
